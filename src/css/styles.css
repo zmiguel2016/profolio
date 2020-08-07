@@ -7,8 +7,8 @@ html, body {
   background-color: #000000 !important; }
 
 .offset:before {
-  height: 4rem;
-  margin-top: -4rem;
+  height: 9rem;
+  margin-top: -9rem;
   content: "";
   display: block; }
 
@@ -152,9 +152,9 @@ h3.heading {
   padding-bottom: 1.9rem; }
 
 .heading-underline {
-  width: 3rem;
-  height: .2rem;
-  background-color: #d5d5d5;
+  width: 5rem;
+  height: .1rem;
+  background-color: #ffffff;
   margin: 0 auto 2rem; }
 
 .art img {
