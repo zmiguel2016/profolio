@@ -1,14 +1,414 @@
 // Variable Overrides 
 $theme-colors: (
-  "primary": #d95700
+  "primary": #ffffff,
+  "secondary":#000000
 );
 
-$body-bg: rgb(255, 255, 255);
+html, body{
+    overflow-x: hidden;
+    height: 100%;;
+    width: 100%;
+    font-family: 'Nova Mono', monospace !important;
+    color: #ffffff!important;
+    background-color: #000000 !important;
+}
+
+.offset:before {
+    height: 9rem;
+    margin-top: -9rem;
+    content: "";
+    display:block;
+
+   
+}
+
+/*--- Navbar --*/
+
+.navbar{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .9rem;
+    font-family: 'Nothing You Could Do', cursive;
+    letter-spacing: .1rem;
+    background-color: #000000 !important;
+    border-bottom: .2px solid rgb(62, 5, 85);
+}
+
+.navbar-brand{
+    min-height: 55px;
+    padding: 0 15px 5px;
+}
+.navbar-nav li{
+    padding-right: 20px;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    color:white;
+    padding-top: .8rem;
+}
+
+#home{
+    background: url(../assets/homescreen.jpg) no-repeat center center;
+    display: table;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    background-size: cover;
+}
+.landing-text{
+    padding-top: 55px;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.landing-text h1{
+    font-size: 650%;
+    font-weight: 100;
+    font-family: 'Nothing You Could Do', cursive;
+    color: #57c5dd;
+    text-shadow: -.7px 0 rgb(255, 255, 255), 0 -.7px rgb(255, 255, 255);
+}
+.landing-text h3{
+    color: rgb(255, 255, 255);
+    font-size: 300%;
+    font-family: 'Nova Mono', monospace;
+    //font-family: 'Jura', sans-serif;
+}
+.about p{
+    color: #ffffff;
+}
+.img-fluid{
+    border: 3px solid rgb(219, 219, 219);
+}
+
+.arrow {
+    box-sizing: border-box;
+    height: 5vw;
+    width: 5vw;
+    border-style: solid;
+    border-color: rgb(62, 5, 85);
+    border-width: 0px 1px 1px 0px;
+    transform: rotate(45deg);
+    transition: border-width 150ms ease-in-out;
+  }
+  
+  .arrow:hover {
+    border-bottom-width: 4px;
+    border-right-width: 4px;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    height: 25vh;
+  }
+
+.fa-html5{
+    color: #c92b2b;
+}
+.fa-bold{
+color: #563d7c
+}
+.fa-css3{
+    color: #0053ed
+}
+.fa-database{
+    color: #db8247
+}
+.fa-js{
+    color: #3ef86d
+}
+
+.fa-angular{
+    color: #bb0000;
+}
+
+.fa-html5, .fa-bold, .fa-css3, .fa-database, .fa-js, .fa-angular{
+    font-size: 4em;
+    margin: 1rem;
+
+}
 
 .jumbotron {
-    background-color: #ffffff !important;
-    border-top: 3px solid rgb(219, 219, 219);
+    background: url(../assets/home.jpg) no-repeat center center fixed;
+    display: table;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    background-size: cover;
+    background-color: #181616 !important;
+    border: 3px solid rgb(219, 219, 219);
 }
+
+.jumbotron h2, h5, p{
+    color: #f2edf5
+}
+
+/*-- slides --*/
+.slide{
+    background-color: #070508;
+}
+.carousel-inner img{
+    width: 100%;
+    height: 100%;
+}
+.carousel-caption{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-85%);
+}
+.display-2{
+    color: #18161a;
+}
+
+.jumbotron2 {
+    background: url(../assets/artboard.jpg) no-repeat center center fixed;
+    display: table;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    background-size: cover;
+    border: 3px solid rgb(219, 219, 219);
+}
+.jumbotron2 p{
+    color: #070508
+}
+
+h3.heading{
+    padding-top: 1.2rem;
+    padding-bottom: 1.9rem;
+}
+.heading-underline{
+    width: 5rem;
+    height: .1rem;
+    background-color: #ffffff;
+    margin: 0 auto 2rem;
+}
+
+.art img{
+    max-width: 100%;
+    height: 350px;
+    width: 350px;
+    object-fit: cover;
+    transition: transform .5s ease;
+}
+
+.row.no-padding [class*=col-]{
+    padding:2;
+}
+.art img:hover{
+    transform: scale(1.1);
+}
+.art{
+    overflow: hidden;
+}
+.padding{
+    padding-bottom: 2rem;
+}
+
+
+.social a{
+    font-size: 4.5em;
+    padding:3rem;
+}
+
+.fa-linkedin{
+    color: #3b5998
+}
+.fa-github{
+    color: #ffffff;
+}
+.fa-instagram{
+    color: #f847e0
+}
+.fa-youtube{
+    color: #bb0000;
+}
+
+.fa-linkedin:hover,
+.fa-github:hover,
+.fa-instagram:hover,
+.fa-youtube:hover{
+    color:rgb(62, 5, 85);
+}
+
+footer{
+    background-color: #000000;
+    color:#d5d5d5;
+    padding-top: 2rem;
+}
+
+hr.light{
+    border-top:1px solid #d5d5d5;
+    width: 75%;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+}
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+  padding: 1rem;
+}
+
+/*---Media Queries --*/
+@media(max-width: 1900px){
+    .landing-text h1{
+        font-size: 550%;
+    }
+    .landing-text h3{
+        font-size: 250%;
+    }
+}
+@media(max-width:1600px){
+    .carousel-caption{
+        transform: translateY(-100%);
+    }
+    .carousel-caption h3{
+        font-size: 150%;
+    }
+    .carousel-caption p{
+        font-size: 70%;
+    }
+    .carousel-caption li{
+        font-size: 70%;
+    }
+}
+@media(max-width: 1200px){
+    .landing-text h1{
+        font-size: 450%;
+    }
+    .landing-text h3{
+        font-size: 200%;
+    }
+    
+}
+
+@media (max-width: 992px) {
+    .social a{
+        font-size: 4em;
+        padding: 2rem;
+    }
+    .carousel-caption{
+        transform: translateY(400%);
+    }
+    .carousel-caption h3{
+        color: #18161a;
+        font-weight: 650;
+    }
+    .carousel-caption p{
+        color: #18161a;
+        font-weight: 600;
+    }
+    .carousel-caption li{
+        color: #18161a;
+        font-weight: 600;
+    }
+}
+@media (max-width: 768px) {
+    .landing-text h1{
+        font-size: 350%;
+    }
+    .landing-text h3{
+        font-size: 150%;
+    }
+    .landing-text btn{
+        font-size: 95%;
+        padding: 8px 14px;
+    }
+    .social a{
+        font-size: 2.5em;
+        padding: 1.2rem;
+    }
+    .carousel-caption{
+        transform: translateY(250%);
+    }
+    .carousel-caption h3{
+        font-weight: 600;
+        font-size: 100%;
+    }
+    .carousel-caption p{
+        font-weight: 400;
+        font-size: 50%;
+    }
+    .carousel-caption li{
+        font-weight: 400;
+        font-size: 50%;
+    }
+
+}
+@media (max-width: 576px) {
+    .landing-text h1{
+        font-size: 250%;
+    }
+    .landing-text h3{
+        font-size: 100%;
+    }
+    .landing-text btn{
+        font-size: 85%;
+        padding: 6px 10px;
+    }
+    .display-4{
+        font-size: 190%;
+    }
+    .social a{
+        font-size: 1.5em;
+        padding: .75rem;
+    }
+    .carousel-caption{
+        transform: translateY(150%);
+    }
+    .carousel-caption h3{
+        font-weight: 400;
+        font-size: 100%;
+    }
+    .carousel-caption p{
+        font-weight: 250;
+        font-size: 50%;
+    }
+    .carousel-caption li{
+        font-weight: 250;
+        font-size: 50%;
+    }
+    
+}
+@media(max-width: 480px){
+    .carousel-caption{
+        transform: translateY(80%);
+    }
+    .carousel-caption h3{
+       
+        font-size: 50%;
+    }
+    .carousel-caption p{
+      
+        font-size: 7px;
+    }
+    .carousel-caption li{
+        
+        font-size: 7px;
+    }
+}
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+
+
+
 // Bootstrap Sass Imports
 @import "node_modules/bootstrap/scss/bootstrap";
 
