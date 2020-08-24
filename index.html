@@ -35,11 +35,13 @@
                                 <a class="nav-link" href="#home" >Home</a>
                         </li>
                         <li class="nav-item">
-                                <a class="nav-link" href="#about">About</a>
+                            <a class="nav-link" href="#projects">Projects</a>
                         </li>
+    
                         <li class="nav-item">
-                            <a class="nav-link" href="#slides">Projects</a>
+                                <a class="nav-link" href="#skills">Skills</a>
                         </li>
+                       
                         <li class="nav-item">
                             <a class="nav-link" href="#art">Art</a>
                         </li>
@@ -58,44 +60,185 @@
                     <div class="landing-text">
                        
                             <h1>Miguel Zambrano</h1>
-                            <h3>Developer & Visual Artist</h3>
+                            <h3>Front-end Developer // Graphic Artist</h3>
                             <div class="container text-center">
-                                <a data-scroll href="#about">
+                                <a data-scroll href="#projects">
                                   <div class="arrow"></div>
                                 </a>
                               </div>
                         </div>
             </div>
-    
             
-            <!--About me-->
-            <div class="landing-text">
-            <div  id = "about" class="container-fluid padding offset">
-            <div class="about row padding">
-                <div class="col-lg-6">
-                    <h2>Personal Bio</h2>
-                    <p>Hello visitor and welcome to my page. For those of you who don’t know me, my name is Miguel Zambrano, and I am a recent graduate of the University of South Carolina, majoring in Computer Science. I have a passion for both the development and design of websites and mobile applications. My expertise in multiple web development languages, frameworks, and technologies, combined with my love for visual arts, allows me to create both functional and stylish full-stack web applications.  I hope you enjoy your time surfing through my site, and I wish to get in touch soon. :)</p>
-                    <h4>Check out my skills</h4>
-                <br>
-                <div class="container text-center">
-                    <a data-scroll href="#skills">
-                      <div class="arrow"></div>
-                    </a>
-                  </div>
-                <!--
-                <a href="#skills" class="btn btn-primary">Top Skills</a>
-                -->
+             <!--Projects-->
+             <div id= "projects" class ="offset">
+             <div class=" col-lg-12 text-center">
+                <h2>Projects</h2>
             </div>
-                <div class="col-lg-6 text-center">
-                    <img src="assets/person.png" class ="img-fluid">
+            
+            <div id = "slides" class="carousel slides" data-ride="carousel" data-interval="7000">
+                <ol class="carousel-indicators">
+                    <li data-target="#slides" data-slide-to="0" class="active"></li>
+                    <li data-target="#slides" data-slide-to="1"></li>
+                    <li data-target="#slides" data-slide-to="2"></li>
+                    <li data-target="#slides" data-slide-to="3"></li>
+                    <li data-target="#slides" data-slide-to="4"></li>
+                    <li data-target="#slides" data-slide-to="5"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <a class="carousel-control-prev" href="#slides" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="false"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#slides" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+
+                    <div class="carousel-item active">
+                        <div class="container-fluid padding">
+                        <div class="about row padding">
+                        <div class="col-lg-6">
+                       <!---- <img src="assets/colors.jpg"> -->
+                        <div class="carousel-caption">
+                            <h3>Job Hunt Tracker Web App</h3>
+                            <p>This web app was built to help keep track of my job application process. It features a current listing of jobs using the GitHub job restAPI which can be added to a users list of jobs they are applying to. From there the user and keep track of what step they are in the application process like when they applied or when their next interview is. There is also a function to add jobs that you apply to from other sites just by enter the basic information about the job posting. </p>
+                            <ul>
+                                <li>React Front-end Framework</li>
+                                <li>Google Firebase Backend</li>
+                            </ul>
+                            <a href = "https://react-jobsearchapp.web.app/" target="_blank"><button type="button" class="btn btn-outline-dark">Live App</button></a>
+                            <a href = "https://github.com/zmiguel2016/jobSearchApp" target="_blank"><button type="button" class="btn btn-outline-dark">Code Repo</button></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="assets/job.png" class ="img-fluid">
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container-fluid padding">
+                        <div class="about row padding">
+                        <div class="col-lg-6">
+                       <!---- cisa app -->
+                        <div class="carousel-caption">
+                            <h3>Carolinas Climate Resilience Conference App</h3>
+                            <p> This iOS/Android mobile application serves as a reusable conference app for the Carolinas Climate Resilience Conference featuring information about the conference, maps of the venue, details about every presentation, bios for every presenter, a dynamic calendar allowing users to view the presentations they are attending within the app, and means for privledged users to edit conference information and alert others of important changes or information. </p>
+                            <ul>
+                                <li>Ionic Front-end Framework</li>
+                                <li>Google Firebase Backend</li>
+                                <li>Angular Framework</li>
+
+                            </ul>
+                           <a href = "https://sccapstone.github.io/TheClimateCrew/" target="_blank"><button type="button" class="btn btn-outline-dark">App Demo</button></a> 
+                            <button onclick="showAlert()" type="button" class="btn btn-outline-dark">Code Repo</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="assets/cisa.png" class ="img-fluid">
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container-fluid padding">
+                        <div class="about row padding">
+                        <div class="col-lg-6">
+                       <!---- <img src="assets/colors.jpg"> -->
+                        <div class="carousel-caption">
+                            <h3>Vibe Check App</h3>
+                            <p> This iOS/Android mobile application is a social media platform for people to share there current 'vibe' with there friends and followers. The app generates a person's vibe based on a language analysis algorithm which determines the person's mood through emotional cues within their photo caption. This provides for a uniquely fun social media experience where everyone's goal is to get their vibes up!</p>
+                            <ul>
+                                <li>Ionic Front-end Framework</li>
+                                <li>Google Firebase Backend</li>
+                                <li>Angular Framework</li>
+
+                            </ul>
+                            <a href = "https://www.youtube.com/watch?v=b_Kv6etAXbw&t=6s" target="_blank"><button type="button" class="btn btn-outline-dark">App Demo</button></a>
+                            <a href = "https://github.com/zmiguel2016/vibeCheck" target="_blank"><button type="button" class="btn btn-outline-dark">Code Repo</button></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="assets/vibe.png" class ="img-fluid">
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container-fluid padding">
+                        <div class="about row padding">
+                        <div class="col-lg-6">
+                       <!---- <img src="assets/colors.jpg"> -->
+                        <div class="carousel-caption">
+                            <h3>Gamecock Store App</h3>
+                            <p> This iOS/Android mobile application serves as a basic eCommerce template app. It has secure user authentication, a shopping cart tied to specific users, and a catalog of all items being sold. The admin of the store can add and delete items for the catalog at any time and all information is stored and accessed live from the backend database.</p>
+                            <ul>
+                                <li>Ionic Front-end Framework</li>
+                                <li>Google Firebase Backend</li>
+                                <li>Angular Framework</li>
+
+                            </ul>
+                            <a href = "https://github.com/zmiguel2016/Gamecockstore" target="_blank"><button type="button" class="btn btn-outline-dark">Code Repo</button></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="assets/store.png" class ="img-fluid">
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                   
+                    <div class="carousel-item">
+                        <div class="container-fluid padding">
+                        <div class="about row padding">
+                        <div class="col-lg-6">
+                       <!---- <img src="assets/colors.jpg"> -->
+                        <div class="carousel-caption">
+                            <h3>A New Sound</h3>
+                            <p> This game was made to create a unique discovery experience where the goal is the find trigger enabled instruments that play music when nearby. The user will enjoy a variety of different songs that hopefully either expand their music taste or introduces them to a new sound.</p>
+                            <ul>
+                                <li>Unity</li>
+                                <li>C#</li>
+
+                            </ul>
+                            <a href = "https://miguelz.itch.io/a-new-vibe" target="_blank"><button type="button" class="btn btn-outline-dark">Play my game</button></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="assets/unity.png" class ="img-fluid">
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="container-fluid padding">
+                        <div class="about row padding">
+                        <div class="col-lg-6">
+                       <!---- <img src="assets/colors.jpg"> -->
+                        <div class="carousel-caption">
+                            <h3>Valet Appointment Web App</h3>
+                            <p>Valet Appointment web app built using bootstrap and firebase backend coming soon!</p>
+                            <ul>
+                                <li>Bootstrap Front-end Framework</li>
+                                <li>Google Firebase Backend</li>
+                            </ul>
+                            <button onclick="showAlert()" type="button" class="btn btn-outline-dark">Code Repo</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="assets/soon.png" class ="img-fluid">
+                    </div>
+                    </div>
+                    </div>
+                    </div>
                 </div>
             </div>
-            <hr id ="skills" class="my-4">
             </div>
+            
+        </div>
         
 
         <!--Top skills-->
-        <div  class="container-fluid padding offset">
+        <div  id = "skills" class="container-fluid padding offset">
         <div class="row text-center padding">
             <div class=" col-lg-12">
                 <h2>Skills and Technologies</h2>
@@ -105,8 +248,8 @@
                 <h4>HTML5</h4>
             </div>
             <div class= "col-xs-12 col-sm-6 col-md-4">
-                <i class="fas fa-bold"></i>
-                <h4>BOOTSTRAP</h4>
+                <i class="fab fa-react"></i>
+                <h4>REACT</h4>
             </div>
             <div class= "col-sm-12 col-md-4">
                 <i class="fab fa-css3"></i>
@@ -127,139 +270,29 @@
         </div> 
         </div> 
     </div>
-            <!--Projects-->
-            <div class=" col-lg-12 text-center offset">
-                <h2>Projects</h2>
-            </div>
-            
-            <div id = "slides" class="carousel slides offset" data-ride="carousel" data-interval="7000">
-                <ol class="carousel-indicators">
-                    <li data-target="#slides" data-slide-to="0" class="active"></li>
-                    <li data-target="#slides" data-slide-to="1"></li>
-                    <li data-target="#slides" data-slide-to="2"></li>
-                    <li data-target="#slides" data-slide-to="3"></li>
-                    <li data-target="#slides" data-slide-to="4"></li>
-                </ol>
-                <div class="carousel-inner" role="listbox">
-                    <a class="carousel-control-prev" href="#slides" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="false"></span>
-                    </a>
-                    <a class="carousel-control-next" href="#slides" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    </a>
-                    <div class="carousel-item active">
-                        <div class="container-fluid padding">
-                        <div class="about row padding">
-                        <div class="col-lg-6">
-                       <!---- cisa app -->
-                        <div class="carousel-caption">
-                            <h3>Carolinas Climate Resilience Conference App</h3>
-                            <p> This iOS/Android mobile application serves as a reusable conference app for the Carolinas Climate Resilience Conference featuring information about the conference, maps of the venue, details about every presentation, bios for every presenter, a dynamic calendar allowing users to view the presentations they are attending within the app, and means for privledged users to edit conference information and alert others of important changes or information. </p>
-                            <ul>
-                                <li>Ionic Front-end Framework</li>
-                                <li>Google Firebase backend</li>
-                                <li>Angular Javasciprt Framework</li>
-
-                            </ul>
-                           <a href = "https://sccapstone.github.io/TheClimateCrew/"><button type="button" class="btn btn-outline-dark">More Info</button></a> 
-                            <button onclick="showAlert()" type="button" class="btn btn-outline-dark">Code Repo</button>
-                        </div>
-                    </div>
+            <!--About me-->
+            <div class="landing-text">
+                <div  id = "about" class="container-fluid padding offset">
+                <div class="about row padding">
                     <div class="col-lg-6">
-                        <img src="assets/cisa.png" class ="img-fluid">
-                    </div>
-                    </div>
-                    </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="container-fluid padding">
-                        <div class="about row padding">
-                        <div class="col-lg-6">
-                       <!---- <img src="assets/colors.jpg"> -->
-                        <div class="carousel-caption">
-                            <h3>Vibe Check App</h3>
-                            <p> This iOS/Android mobile application is a social media platform for people to share there current 'vibe' with there friends and followers. The app generates a person's vibe based on a language analysis algorithm which determines the person's mood through emotional cues within their photo caption. This provides for a uniquely fun social media experience where everyone's goal is to get their vibes up!</p>
-                            <ul>
-                                <li>Ionic Front-end Framework</li>
-                                <li>Google Firebase backend</li>
-                                <li>Angular Javasciprt Framework</li>
-
-                            </ul>
-                            <a href = "https://www.youtube.com/watch?v=b_Kv6etAXbw&t=6s"><button type="button" class="btn btn-outline-dark">More Info</button></a>
-                            <a href = "https://github.com/zmiguel2016/vibeCheck"><button type="button" class="btn btn-outline-dark">Code Repo</button></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <img src="assets/vibe.png" class ="img-fluid">
-                    </div>
-                    </div>
-                    </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="container-fluid padding">
-                        <div class="about row padding">
-                        <div class="col-lg-6">
-                       <!---- <img src="assets/colors.jpg"> -->
-                        <div class="carousel-caption">
-                            <h3>Gamecock Store App</h3>
-                            <p> This iOS/Android mobile application serves as a basic eCommerce template app. It has secure user authentication, a shopping cart tied to specific users, and a catalog of all items being sold. The admin of the store can add and delete items for the catalog at any time and all information is stored and accessed live from the backend database.</p>
-                            <ul>
-                                <li>Ionic Front-end Framework</li>
-                                <li>Google Firebase backend</li>
-                                <li>Angular Javasciprt Framework</li>
-
-                            </ul>
-                            <a href = "https://github.com/zmiguel2016/Gamecockstore"><button type="button" class="btn btn-outline-dark">Code Repo</button></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <img src="assets/store.png" class ="img-fluid">
-                    </div>
-                    </div>
-                    </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="container-fluid padding">
-                        <div class="about row padding">
-                        <div class="col-lg-6">
-                       <!---- <img src="assets/colors.jpg"> -->
-                        <div class="carousel-caption">
-                            <h3>Valet Appointment Web App</h3>
-                            <p>Valet Appointment web app built using bootstrap and firebase backend coming soon!</p>
-                            <ul>
-                                <li>Bootstrap Front-end Framework</li>
-                                <li>Google Firebase backend</li>
-                            </ul>
-                            <button onclick="showAlert()" type="button" class="btn btn-outline-dark">Code Repo</button>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <img src="assets/soon.png" class ="img-fluid">
-                    </div>
-                    </div>
-                    </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="container-fluid padding">
-                        <div class="about row padding">
-                        <div class="col-lg-6">
-                       <!---- <img src="assets/colors.jpg"> -->
-                        <div class="carousel-caption">
-                            <h3>A New Sound</h3>
-                            <p> This unity game uses C# scripts to create a unique discovery experience where the goal is the find trigger enabled instruments that play music when nearby. The user will enjoy a variety of different songs that hopefully either expand their music taste or introduces them to a new sound.</p>
-                            
-                            <a href = "https://miguelz.itch.io/a-new-vibe"><button type="button" class="btn btn-outline-dark">Play my game</button></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <img src="assets/unity.png" class ="img-fluid">
-                    </div>
-                    </div>
-                    </div>
+                        <h2>Personal Bio</h2>
+                        <p>Hello visitor and welcome to my page. For those of you who don’t know me, my name is Miguel Zambrano, and I am a recent graduate of the University of South Carolina, majoring in Computer Science. I have a passion for both the development and design of websites and mobile applications. My expertise in multiple web development languages, frameworks, and technologies, combined with my love for visual arts, allows me to create both functional and stylish full-stack web applications.  I hope you enjoy your time surfing through my site, and I wish to get in touch soon.</p>
+                        <h4>Check out my art</h4>
+                    <br>
+                    <div class="container text-center">
+                        <a data-scroll href="#art">
+                          <div class="arrow"></div>
+                        </a>
+                      </div>
+                    <!--
+                    <a href="#skills" class="btn btn-primary">Top Skills</a>
+                    -->
+                </div>
+                    <div class="col-lg-6 text-center">
+                        <img src="assets/person.png" class ="img-fluid">
                     </div>
                 </div>
-            </div>
-            </div>
+                
             <!--Art-->
             <div id = "art" class= "offset">
             <div class="jumbotron2 container-fluid padding">
@@ -343,7 +376,8 @@
                         <hr class ="light">
                         <strong>Contact Info</strong>
                         <p>Miguel A. Zambrano</p>
-                        <p>zmiguel2016@gmail.com<br>(919) 710-2633</p>
+                        <p>
+                        <a href = "mailto: zmiguel2016@gmail.com">zmiguel2016@gmail.com</a><br>(919) 710-2633</p>
                         <p>Raleigh, NC</p>
                        
                     </div>
