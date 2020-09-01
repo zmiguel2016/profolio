@@ -160,7 +160,9 @@ color: #66bffa
     position: absolute;
     top: 50%;
     transform: translateY(-85%);
+
 }
+
 .display-2{
     color: #18161a;
 }
@@ -181,11 +183,12 @@ color: #66bffa
 h3.heading{
     padding-top: 1.2rem;
     padding-bottom: 1.9rem;
+    color: black;
 }
 .heading-underline{
     width: 5rem;
     height: .1rem;
-    background-color: #ffffff;
+    background-color: #291a52;
     margin: 0 auto 2rem;
 }
 
@@ -275,6 +278,7 @@ hr.light{
     .carousel-caption li{
         font-size: 70%;
     }
+   
 }
 @media(max-width: 1200px){
     .landing-text h1{
@@ -294,16 +298,22 @@ hr.light{
     .carousel-caption{
         transform: translateY(400%);
     }
+    .jobImg{
+        filter: invert(100) opacity(30%);
+        background-attachment: white;
+        
+    }
+
     .carousel-caption h3{
-        color: #18161a;
+        //color: #18161a;
         font-weight: 650;
     }
     .carousel-caption p{
-        color: #18161a;
+        //color: #18161a;
         font-weight: 600;
     }
     .carousel-caption li{
-        color: #18161a;
+      //  color: #18161a;
         font-weight: 600;
     }
 }
