@@ -33,6 +33,7 @@ html, body {
   color: white;
   padding-top: .8rem; }
 
+/*--- home--*/
 #home {
   background: url(../assets/homescreen.jpg) no-repeat center center;
   display: table;
@@ -59,12 +60,7 @@ html, body {
   font-size: 300%;
   font-family: 'Nova Mono', monospace; }
 
-.about p {
-  color: #ffffff; }
-
-.img-fluid {
-  border: 3px solid #dbdbdb; }
-
+/*--- arrow--*/
 .arrow {
   box-sizing: border-box;
   height: 5vw;
@@ -84,6 +80,7 @@ html, body {
   justify-content: center;
   height: 25vh; }
 
+/*--- skills--*/
 .fa-html5 {
   color: #c92b2b; }
 
@@ -106,19 +103,6 @@ html, body {
   font-size: 4em;
   margin: 1rem; }
 
-.jumbotron {
-  background: url(../assets/home.jpg) no-repeat center center fixed;
-  display: table;
-  height: 100%;
-  position: relative;
-  width: 100%;
-  background-size: cover;
-  background-color: #181616 !important;
-  border: 3px solid #dbdbdb; }
-
-.jumbotron h2, h5, p {
-  color: #f2edf5; }
-
 /*-- slides --*/
 .slide {
   background-color: #070508; }
@@ -138,6 +122,7 @@ html, body {
 .display-2 {
   color: #18161a; }
 
+/*-- art --*/
 .jumbotron2 {
   background: url(../assets/artboard.jpg) no-repeat center center fixed;
   display: table;
@@ -152,12 +137,13 @@ html, body {
 
 h3.heading {
   padding-top: 1.2rem;
-  padding-bottom: 1.9rem; }
+  padding-bottom: 1.9rem;
+  color: black; }
 
 .heading-underline {
   width: 5rem;
   height: .1rem;
-  background-color: #ffffff;
+  background-color: #291a52;
   margin: 0 auto 2rem; }
 
 .art img {
@@ -179,6 +165,7 @@ h3.heading {
 .padding {
   padding-bottom: 2rem; }
 
+/*-- contant --*/
 .social a {
   font-size: 4.5em;
   padding: 3rem; }
@@ -201,6 +188,7 @@ h3.heading {
 .fa-youtube:hover {
   color: #3e0555; }
 
+/*-- footer --*/
 footer {
   background-color: #000000;
   color: #d5d5d5;
@@ -245,14 +233,14 @@ hr.light {
     padding: 2rem; }
   .carousel-caption {
     transform: translateY(400%); }
+  .jobImg {
+    filter: invert(100) opacity(30%);
+    background-attachment: white; }
   .carousel-caption h3 {
-    color: #18161a;
     font-weight: 650; }
   .carousel-caption p {
-    color: #18161a;
     font-weight: 600; }
   .carousel-caption li {
-    color: #18161a;
     font-weight: 600; } }
 
 @media (max-width: 768px) {
@@ -313,22 +301,6 @@ hr.light {
   .carousel-caption li {
     font-size: 7px; } }
 
-/*
-Extra small (xs) devices (portrait phones, less than 576px)
-No media query since this is the default in Bootstrap
-
-Small (sm) devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
-
-Medium (md) devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
-
-Large (lg) devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
-
-Extra (xl) large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
-*/
 /*!
  * Bootstrap v4.5.0 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
