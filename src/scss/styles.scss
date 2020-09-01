@@ -47,6 +47,7 @@ html, body{
     padding-top: .8rem;
 }
 
+/*--- home--*/
 #home{
     background: url(../assets/homescreen.jpg) no-repeat center center;
     display: table;
@@ -75,13 +76,8 @@ html, body{
     font-family: 'Nova Mono', monospace;
     //font-family: 'Jura', sans-serif;
 }
-.about p{
-    color: #ffffff;
-}
-.img-fluid{
-    border: 3px solid rgb(219, 219, 219);
-}
 
+/*--- arrow--*/
 .arrow {
     box-sizing: border-box;
     height: 5vw;
@@ -104,6 +100,7 @@ html, body{
     height: 25vh;
   }
 
+  /*--- skills--*/
 .fa-html5{
     color: #c92b2b;
 }
@@ -130,21 +127,6 @@ color: #66bffa
 
 }
 
-.jumbotron {
-    background: url(../assets/home.jpg) no-repeat center center fixed;
-    display: table;
-    height: 100%;
-    position: relative;
-    width: 100%;
-    background-size: cover;
-    background-color: #181616 !important;
-    border: 3px solid rgb(219, 219, 219);
-}
-
-.jumbotron h2, h5, p{
-    color: #f2edf5
-}
-
 /*-- slides --*/
 .slide{
     background-color: #070508;
@@ -167,6 +149,7 @@ color: #66bffa
     color: #18161a;
 }
 
+/*-- art --*/
 .jumbotron2 {
     background: url(../assets/artboard.jpg) no-repeat center center fixed;
     display: table;
@@ -213,7 +196,7 @@ h3.heading{
     padding-bottom: 2rem;
 }
 
-
+/*-- contant --*/
 .social a{
     font-size: 4.5em;
     padding:3rem;
@@ -239,6 +222,7 @@ h3.heading{
     color:rgb(62, 5, 85);
 }
 
+/*-- footer --*/
 footer{
     background-color: #000000;
     color:#d5d5d5;
@@ -401,25 +385,6 @@ hr.light{
         font-size: 7px;
     }
 }
-
-
-/*
-Extra small (xs) devices (portrait phones, less than 576px)
-No media query since this is the default in Bootstrap
-
-Small (sm) devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
-
-Medium (md) devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
-
-Large (lg) devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
-
-Extra (xl) large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
-*/
-
 
 
 // Bootstrap Sass Imports
