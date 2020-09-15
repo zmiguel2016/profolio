@@ -1,8 +1,9 @@
-html, body {
+html,
+body {
   overflow-x: hidden;
   height: 100%;
   width: 100%;
-  font-family: 'Nova Mono', monospace !important;
+  font-family: "Nova Mono", monospace !important;
   color: #ffffff !important;
   background-color: #000000 !important; }
 
@@ -16,9 +17,9 @@ html, body {
 .navbar {
   text-transform: uppercase;
   font-weight: 700;
-  font-size: .9rem;
-  font-family: 'Nothing You Could Do', cursive;
-  letter-spacing: .1rem;
+  font-size: 0.9rem;
+  font-family: "Nothing You Could Do", cursive;
+  letter-spacing: 0.1rem;
   background-color: #000000 !important;
   border-bottom: 0.2px solid #3e0555; }
 
@@ -31,7 +32,7 @@ html, body {
 
 .navbar-dark .navbar-nav .nav-link {
   color: white;
-  padding-top: .8rem; }
+  padding-top: 0.8rem; }
 
 /*--- home--*/
 #home {
@@ -51,14 +52,14 @@ html, body {
 .landing-text h1 {
   font-size: 650%;
   font-weight: 100;
-  font-family: 'Nothing You Could Do', cursive;
+  font-family: "Nothing You Could Do", cursive;
   color: #57c5dd;
   text-shadow: -0.7px 0 white, 0 -0.7px white; }
 
 .landing-text h3 {
   color: white;
   font-size: 300%;
-  font-family: 'Nova Mono', monospace; }
+  font-family: "Nova Mono", monospace; }
 
 /*--- arrow--*/
 .arrow {
@@ -99,7 +100,12 @@ html, body {
 .fa-angular {
   color: #bb0000; }
 
-.fa-html5, .fa-react, .fa-css3, .fa-database, .fa-js, .fa-angular {
+.fa-html5,
+.fa-react,
+.fa-css3,
+.fa-database,
+.fa-js,
+.fa-angular {
   font-size: 4em;
   margin: 1rem; }
 
@@ -143,7 +149,7 @@ h3.heading {
 
 .heading-underline {
   width: 5rem;
-  height: .1rem;
+  height: 0.1rem;
   background-color: #291a52;
   margin: 0 auto 2rem; }
 
@@ -152,9 +158,9 @@ h3.heading {
   height: 350px;
   width: 350px;
   object-fit: cover;
-  transition: transform .5s ease; }
+  transition: transform 0.5s ease; }
 
-.row.no-padding [class*=col-] {
+.row.no-padding [class*="col-"] {
   padding: 2; }
 
 .art img:hover {
@@ -198,7 +204,7 @@ footer {
 hr.light {
   border-top: 1px solid #d5d5d5;
   width: 75%;
-  margin-top: .8rem;
+  margin-top: 0.8rem;
   margin-bottom: 1rem; }
 
 /*--- Bootstrap Padding Fix --*/
@@ -279,7 +285,7 @@ hr.light {
     font-size: 190%; }
   .social a {
     font-size: 1.5em;
-    padding: .75rem; }
+    padding: 0.75rem; }
   .carousel-caption {
     transform: translateY(150%); }
   .carousel-caption h3 {
