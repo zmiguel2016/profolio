@@ -15,12 +15,14 @@ body {
 }
 
 .offset:before {
-  height: 6rem;
-  margin-top: -6rem;
+  height: 7rem;
+  margin-top: -5rem;
   content: "";
   display: block;
 }
-
+.spacing {
+  padding-top: 5rem;
+}
 /*--- Navbar --*/
 
 .navbar {
@@ -106,14 +108,14 @@ body {
 .fa-react {
   color: #66bffa;
 }
-.fa-css3 {
-  color: #0053ed;
+.fa-node-js {
+  color: rgb(12, 170, 6);
 }
 .fa-database {
   color: #db8247;
 }
 .fa-js {
-  color: #3ef86d;
+  color: #eaff2f;
 }
 
 .fa-angular {
@@ -122,7 +124,7 @@ body {
 
 .fa-html5,
 .fa-react,
-.fa-css3,
+.fa-node-js,
 .fa-database,
 .fa-js,
 .fa-angular {
@@ -143,12 +145,18 @@ body {
 }
 .carousel-caption {
   position: absolute;
-  top: 50%;
+  top: 45%;
   transform: translateY(-85%);
 }
 
 .display-2 {
   color: #18161a;
+}
+.project-underline {
+  width: 5rem;
+  height: 0.1rem;
+  background-color: #ffffff;
+  margin: 0 auto 2rem;
 }
 
 /*-- art --*/
@@ -238,6 +246,7 @@ hr.light {
   margin-top: 0.8rem;
   margin-bottom: 1rem;
 }
+
 /*--- Bootstrap Padding Fix --*/
 [class*="col-"] {
   padding: 1rem;
